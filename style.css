@@ -1,0 +1,96 @@
+:root{
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Red Hat Display", sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: var(--Pale-blue);
+    background-size: cover;
+    background-position: center;
+}
+
+.screen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-content{
+    padding: 8%;
+}
+
+h1{
+    color: var(--Dark-blue);
+}
+
+p{
+    margin-bottom: 5%;
+    color: var(--Desaturated-blue);
+}
+
+.plan{
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+
+.plan{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Very-pale-blue);
+}
+
+.div{
+    display: flex;
+    align-items: center;
+}
+
+.annual{
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+
+.plan-exp{
+    margin-left: 20px;
+}
+
+button{
+    background-color: var(--Bright-blue);
+    color: white;
+    font-weight: 900;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5%;
+    margin-bottom: 5%;
+    box-shadow: 0px 1px 8px 1px var(--Bright-blue);
+}
